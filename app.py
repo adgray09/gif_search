@@ -9,12 +9,12 @@ def index():
     """Return homepage."""
     # TODO: Extract the query term from url using request.args.get()
     
-    info = {
-        "q": "search",
-        "key": "H5WM0TFR6PJ8",
+    params = {
+        'q': "search",
+        'key': "H5WM0TFR6PJ8",
         "limit": 10,
     }
-    r = request.args.get("https://api.tenor.com/v1/search?", params=info)
+    r = requests.get("https://api.tenor.com/v1/search?", params = params)
     # TODO: Make 'params' dictionary containing:
     # a) the query term, 'q'
     # b) your API key, 'key'
