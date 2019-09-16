@@ -23,6 +23,12 @@ def index():
     # TODO: Make an API call to Tenor using the 'requests' library. For 
     # reference on how to use Tenor, see: 
     # https://tenor.com/gifapi/documentation
+<<<<<<< HEAD
+   # def get_gif():
+   #     r = requests.get(
+   # "https://api.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apikey, lmt))
+=======
+>>>>>>> a5f16fd5e23f5bb3fa88d9815ed8cb212b7e3978
 
     # TODO: Use the '.json()' function to get the JSON of the returned response
     # object
