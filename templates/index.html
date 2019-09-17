@@ -35,6 +35,11 @@
 
 
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
+{% for i in gifs %}
+
+        {% include 'gif.html' %}
+
+    {% endfor %}
 
     <!-- We are looping over all of the gifs that were passed to our machine/code 
         from the server/outside code -->

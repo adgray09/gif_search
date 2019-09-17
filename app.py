@@ -61,7 +61,11 @@ def index():
 
     return render_template("index.html")
     
+<<<<<<< HEAD
     # index()
+=======
+index()
+>>>>>>> 792efc259da9390a3559971ffd774204187b75e0
 
 if __name__ == '__main__':
     app.run(debug=True)
