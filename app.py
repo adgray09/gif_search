@@ -6,7 +6,7 @@ from flask import Flask, render_template, request
 import requests
 import json
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 @app.route('/')
 def index():
@@ -14,7 +14,7 @@ def index():
     # TODO: Extract the query term from url using request.args.get()
     name = request.args.get('search')
 
-  
+
     # TODO: Make 'params' dictionary containing:
     # a) the query term, 'q'
     # b) your API key, 'key'
@@ -41,14 +41,6 @@ def index():
     # TODO: Make an API call to Tenor using the 'requests' library. For 
     # reference on how to use Tenor, see: 
     # https://tenor.com/gifapi/documentation
-    # def get_gif():
-    #     r = requests.get(
-    # "https://api.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apikey, lmt))
-    #if r.status_code == 200:
-        #top_10gifs = json.loads(r.content)
-        #print(top_10gifs)
-    #else:
-        #top_10gifs = None
 
     # TODO: Use the '.json()' function to get the JSON of the returned response
     # object
