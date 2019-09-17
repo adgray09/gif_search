@@ -14,7 +14,7 @@ def index():
     # TODO: Extract the query term from url using request.args.get()
     name = request.args.get('search')
 
-  
+
     # TODO: Make 'params' dictionary containing:
     # a) the query term, 'q'
     # b) your API key, 'key'
@@ -34,7 +34,7 @@ def index():
         top_ten = response_dict['results']
         print(top_ten)
         print("HERE__________________________")
-        print(len(top_ten['results']))
+        #print(len(top_ten['results']))
         # if 
 
 
@@ -60,12 +60,8 @@ def index():
     # named parameter called 'gifs'
 
     return render_template("index.html")
-    
-<<<<<<< HEAD
+
     # index()
-=======
-index()
->>>>>>> 792efc259da9390a3559971ffd774204187b75e0
 
 if __name__ == '__main__':
     app.run(debug=True)
