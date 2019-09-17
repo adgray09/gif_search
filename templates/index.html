@@ -1,31 +1,19 @@
-{% extends 'base.html' %}
 
-{% block title %}
-    Gif Search
-{% endblock %}
-
-{% block content %}
-
-    <h1>
-        Search for your GIFs!
-    </h1>
+<h1>
+    Search for your GIFs!
+</h1> 
 
     <form action ="/">
         <div class= "search_bar">
-                <input type="text" class="search_bar_style" name="search" placeholder="Search">
-                <button type="submit" class="search_button">Submit</button>
+            <input type="text" class="search_bar_style" name="search" placeholder="Search">
+            <button type="submit" class="search_button">Submit</button>
         </div>
     </form>
-
-
-
 <!-- templates/index.html -->
 
-{% extends 'base.html' %}
-{% block body %}
-<div class= "page_title"> 
-    <h1>GIF Search</h1>
-</div>
+    <div class= "page_title"> 
+        <h1>GIF Search</h1>
+    </div>
 <!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
 
     <!-- We are creating a base/body for our gif search webpage so that it will 
@@ -38,12 +26,12 @@
     <!-- We will make a search bar, in the type of google, where users will be able to 
         search for gifs, and then press on a submit button to then send their requests -->
 
-<div class="search_bar">
-    <input class="search_bar_text" type="text" name="" placeholder="Search" />
-    <button type="submit" class="search_button">
-        <i class="fas fa-search"></i>
-    </button>
-</div>
+    <div class="search_bar">
+        <input class="search_bar_text" type="text" name="" placeholder="Search" />
+        <button type="submit" class="search_button">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
 
 
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
@@ -53,4 +41,4 @@
 
 <!-- TODO: For each gif, include the 'gif.html' template to display it -->
 
-{% endblock %}
+
