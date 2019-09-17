@@ -1,9 +1,9 @@
 <!-- templates/index.html -->
-{% extends “base.html” %}
+{% extends "base.html" %}
 
 <!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
-
 {% block body %}
+
 <h1>
     Search for your GIFs!
 </h1> 
@@ -34,13 +34,9 @@
 
 
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
-<<<<<<< HEAD
-
-=======
     {% for gif in gifs%}
         {%include 'gif.html'%}
     {%endfor%}
->>>>>>> d7c2e6d4e8941e80c72a1e34ca2e4041e84cd3df
 
     <!-- We are looping over all of the gifs that were passed to our machine/code 
         from the server/outside code -->
