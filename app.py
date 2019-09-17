@@ -32,9 +32,9 @@ def index():
         response_dict = json.loads(r.content)
         # Retrieve results from response dict
         top_ten = response_dict['results']
-        print(top_ten)
+        print(top_ten[0])
         print("HERE__________________________")
-        print(len(top_ten['results']))
+        #print(len(top_ten['results']))
         # if 
 
 
@@ -54,7 +54,7 @@ def index():
     return render_template("index.html", gifs=top_ten)
 
     
-index()
+
 
 if __name__ == '__main__':
     app.run(debug=True)
