@@ -59,13 +59,10 @@ def index():
     # TODO: Render the 'index.html' template, passing the list of gifs as a
     # named parameter called 'gifs'
 
-    return render_template("index.html")
+    return render_template("index.html", gifs=top_ten)
+
     
-<<<<<<< HEAD
-    # index()
-=======
 index()
->>>>>>> 792efc259da9390a3559971ffd774204187b75e0
 
 if __name__ == '__main__':
     app.run(debug=True)
