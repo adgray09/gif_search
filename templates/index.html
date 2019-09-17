@@ -1,4 +1,9 @@
+<!-- templates/index.html -->
+{% extends “base.html” %}
 
+<!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
+
+{% block body %}
 <h1>
     Search for your GIFs!
 </h1> 
@@ -9,12 +14,12 @@
             <button type="submit" class="search_button">Submit</button>
         </div>
     </form>
-<!-- templates/index.html -->
 
     <div class= "page_title"> 
         <h1>GIF Search</h1>
     </div>
-<!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
+
+
 
     <!-- We are creating a base/body for our gif search webpage so that it will 
         look a certain way when someone loads it -->
@@ -26,20 +31,20 @@
     <!-- We will make a search bar, in the type of google, where users will be able to 
         search for gifs, and then press on a submit button to then send their requests -->
 
-    <div class="search_bar">
-        <input class="search_bar_text" type="text" name="" placeholder="Search" />
-        <button type="submit" class="search_button">
-            <i class="fas fa-search"></i>
-        </button>
-    </div>
 
 
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
+<<<<<<< HEAD
 
+=======
+    {% for gif in gifs%}
+        {%include 'gif.html'%}
+    {%endfor%}
+>>>>>>> d7c2e6d4e8941e80c72a1e34ca2e4041e84cd3df
 
     <!-- We are looping over all of the gifs that were passed to our machine/code 
         from the server/outside code -->
 
 <!-- TODO: For each gif, include the 'gif.html' template to display it -->
-
+{% endblock %}
 
