@@ -5,7 +5,7 @@
 {% block body %}
 
 <h1>
-    Search for your GIFs!
+    GifHub
 </h1> 
 
     <form action ="/">
@@ -16,7 +16,7 @@
     </form>
 
     <div class= "page_title"> 
-        <h1>GIF Search</h1>
+        <h1>Search our GIFs!</h1>
     </div>
 
 
@@ -34,9 +34,13 @@
 
 
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
-    {% for gif in gifs%}
-        {%include 'gif.html'%}
-    {%endfor%}
+    {% if gifs %}
+        {% for gif in gifs%}
+            {%include 'gif.html'%}
+        {%endfor%}
+    {% else %}
+        
+    {% endif %}
 
     <!-- We are looping over all of the gifs that were passed to our machine/code 
         from the server/outside code -->
